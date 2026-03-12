@@ -294,8 +294,9 @@ Skills are plain Markdown files. Fork and customize:
 | `PILOT_TIMEOUT_HOURS` | 3h | Hard timeout — kill runaway pilots, collect partial results |
 | `MAX_PILOT_IDEAS` | 3 | Maximum number of ideas to pilot in parallel |
 | `MAX_TOTAL_GPU_HOURS` | 8h | Total GPU budget across all pilots |
+| `AUTO_PROCEED` | true | Auto-continue with top-ranked option if user doesn't respond. Set `false` to always wait for explicit approval |
 
-Override inline: `/idea-discovery "topic" — pilot budget: 4h per idea, 20h total`
+Override inline: `/idea-discovery "topic" — pilot budget: 4h per idea, wait for my approval at each step`
 
 ### General
 

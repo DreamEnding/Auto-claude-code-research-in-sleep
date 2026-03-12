@@ -241,8 +241,9 @@ Skills 就是普通的 Markdown 文件，fork 后随意改：
 | `PILOT_TIMEOUT_HOURS` | 3h | 硬超时——强制终止，收集部分结果 |
 | `MAX_PILOT_IDEAS` | 3 | 最多并行 pilot 几个 idea |
 | `MAX_TOTAL_GPU_HOURS` | 8h | 所有 pilot 的总 GPU 预算 |
+| `AUTO_PROCEED` | true | 用户不回复时自动带着最优方案继续。设 `false` 则每步都等确认 |
 
-行内覆盖：`/idea-discovery "方向" — pilot budget: 4h per idea, 20h total`
+行内覆盖：`/idea-discovery "方向" — pilot budget: 4h per idea, 每步等我确认`
 
 ### 通用
 
