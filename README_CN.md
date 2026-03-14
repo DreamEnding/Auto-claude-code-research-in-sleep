@@ -106,6 +106,12 @@ claude
 | Skill | 🤖 [`idea-discovery-robot`](skills/idea-discovery-robot/SKILL.md) | 机器人 / 具身智能 | 工作流 1 适配版——按 embodiment、benchmark、sim2real 路径和安全约束生成、筛选 idea | 是 |
 | External | 🔬 [Auto-Research-Refine](https://github.com/zjYao36/Auto-Research-Refine) | 通用 | 把模糊 idea 变成可执行研究方案——衔接 `/idea-discovery` 和 `/auto-review-loop`。Claude + GPT-5.4 迭代精炼 | 是 |
 
+> **⭐ 推荐：[Auto-Research-Refine](https://github.com/zjYao36/Auto-Research-Refine)** — 填补了"研究什么"到"怎么研究"之间的空白。接入 ARIS 流水线：
+>
+> `/idea-discovery` → **`/research-refine`** → `/auto-review-loop` → `/paper-writing`
+>
+> 模糊想法 → 排名后的 idea → **可执行研究方案** → 精修论文
+
 ## 🔄 工作流
 
 所有 Skills 组成完整科研流水线。三个工作流可以单独使用，也可以串联：

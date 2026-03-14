@@ -106,6 +106,12 @@ Domain-specific skills and external projects contributed by the community. PRs w
 | Skill | 🤖 [`idea-discovery-robot`](skills/idea-discovery-robot/SKILL.md) | Robotics / Embodied AI | Workflow 1 adaptation — grounds idea discovery in embodiment, benchmark, sim2real path, and real-robot safety constraints | Yes |
 | External | 🔬 [Auto-Research-Refine](https://github.com/zjYao36/Auto-Research-Refine) | General | Turn a vague idea into an executable research proposal — bridges `/idea-discovery` and `/auto-review-loop`. Claude + GPT-5.4 iterative refinement | Yes |
 
+> **⭐ Highlighted: [Auto-Research-Refine](https://github.com/zjYao36/Auto-Research-Refine)** — Fills the gap between "what to research" and "how to research it". Plug it into the ARIS pipeline:
+>
+> `/idea-discovery` → **`/research-refine`** → `/auto-review-loop` → `/paper-writing`
+>
+> Vague idea → Ranked ideas → **Executable proposal** → Polished paper
+
 ## 🔄 Workflows
 
 These skills compose into a full research lifecycle. The three workflows can be used independently or chained together:
