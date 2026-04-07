@@ -87,6 +87,7 @@ ARIS 读论文 → 找弱点 → 克隆代码 → 针对*那些*弱点用*那套
 
 ## 📢 最近更新
 
+- **2026-04-08** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📚 **[`/research-wiki`](skills/research-wiki/SKILL.md)** — 持久化研究知识库，灵感来自 [Karpathy 的 LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)。跨研究全生命周期积累论文、想法、实验、claim 及其 typed 关系。Wiki hooks 集成到 `/research-lit`（论文入库）、`/idea-creator`（读 wiki + 写回 idea）、`/result-to-claim`（更新 claim 状态 + 触发重新构思）。失败的 idea 成为防重复记忆。**ARIS 现在能从错误中学习。**
 - **2026-04-05** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🧬 **[`/meta-optimize`](skills/meta-optimize/SKILL.md)** — ARIS 外循环 harness 优化。通过 [Claude Code hooks](templates/claude-hooks/meta_logging.json) 被动记录技能调用、工具执行、失败和参数覆盖。运行 `/meta-optimize` 分析使用数据，提出 SKILL.md 改进方案——经 reviewer 审核、用户批准。灵感来自 [Meta-Harness](https://arxiv.org/abs/2603.28052)（Lee et al., 2026）。**ARIS 现在可以优化自己。**
 - **2026-04-04** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🔧 **Codex Plugin 深度集成** — 实验失败（工作流 1.5）或 LaTeX 编译出错（工作流 3）时，自动调用 `/codex:rescue` 让 GPT 独立诊断 bug，再由 Claude 重试。两个 AI 一起 debug。`codex exec` 驱动 nightmare review，`/codex:rescue` 驱动 auto-debug，各司其职
 - **2026-04-03** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) ☁️ **[Modal 无服务器 GPU](skills/serverless-modal/SKILL.md)** — 没有 GPU？CLAUDE.md 写 `gpu: modal`，一条命令跑实验，无需 SSH/Docker，跑完自动停止。**$30/月免费额度**，`pip install modal && modal setup` 即可体验 ARIS 全流程。社区贡献 by [@zeyuzhangzyz](https://github.com/zeyuzhangzyz)
